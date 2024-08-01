@@ -1,0 +1,36 @@
+{
+  "name": "zurf",
+  "version": "0.0.0",
+  "description": "A TypeScript utility library offering a set of versatile and type-safe tools for development.",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
+    "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zurf-dev/zurf.git"
+  },
+  "keywords": [
+    "typescript",
+    "tools",
+    "development"
+  ],
+  "author": "Ethan Davies <contact@ethandavies.co.uk>",
+  "bugs": {
+    "url": "https://github.com/zurf-dev/zurf/issues"
+  },
+  "homepage": "https://github.com/zurf-dev/zurf#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "husky": "^9.1.4",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
